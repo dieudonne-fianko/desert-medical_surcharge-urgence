@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head lang="fr">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="déserts médicaux, surcharge des urgences, indicateurs santé, France, santé publique, tableau de bord, visualisation données">
+        <meta name="description" content="Comprenez les déserts médicaux et la surcharge des urgences grâce à un tableau de bord interactif. Comparez les régions de France via des indicateurs clairs et visuels.">
+        <meta name="author" content="Dieu-Donné FIANKO,Sayeh FATEN,Zoughbi MERIEM">
+        <link rel="stylesheet" href="styles/styles_index.css">
+        <link rel="icon" href="images/favicon.png">
+        <title>Desert médical & surcharge des urgences</title>
+    </head>
+
+    <body>
+        <div class="banniere-container">
+            <img src="images/desert.jpg" alt="Bannière urgence" class="banniere-img">
+        </div>
+        <header>
+            <div class="logo-zone">
+                <nav>
+                    <a href="#accueil">Accueil</a>
+                    <a href="#apropos">A propos</a>
+                    <a href="#data">Données & Méthodes</a>
+                    <a href="#dashboard">Visualisations</a>
+                    <a href="#contact">Contacts</a>
+                </nav>
+            </div>
+        </header>
+        <section id="accueil">
+            <div class="accueil-contenu">
+                <h1>Déserts médicaux et surcharge des urgences</h1>
+                <p>Un tableau de bord interactif pour comprendre et visualiser les inégalités d'accès aux soins en France.</p>
+                <ul>
+                    <li>Comparez les indicateurs entre zones</li>
+                    <li>Identifier les zones avec désert médical et/ou surcharge des urgences</li>
+                </ul>
+                Ce projet vise à <em>mieux comprendre les déséquilibres territoriaux</em> et fournir des outils d’aide à la décision pour un système de santé plus équitable.
+                </p>
+                <a class="btn-cta" href="visualisation/dashboard.php">Explorer le tableau de bord</a>
+            </div>
+        </section>
+
+        <section id="apropos">
+            <div class="apropos-contenu">
+                <h2>À propos</h2>
+                <p>
+                Ce travail a été réalisé dans le cadre d’un <strong>projet tutoré du Master 1 Santé Publique – parcours Informatique Biomédicale</strong>, à l’<strong>Université Sorbonne Paris Nord</strong> (<em>UFR Santé Médecine Biologie Humaine</em>), au cours de l’année universitaire <strong>2024–2025</strong>.
+                </p>
+                <p>
+                Il résulte d’un travail d’équipe réalisé par un groupe d’étudiants rassemblant des compétences variées en <strong>informatique biomédicale, santé publique, statistiques et visualisation de données</strong>. Notre collaboration a permis de croiser les expertises et les idées pour construire un outil interactif pertinent.
+                </p>
+                <p>
+                Encadré(e)s par <strong>Mélanie COURTINE</strong>, nous avons travaillé collectivement autour d’un objectif commun : <em>mettre en lumière les dynamiques territoriales d’accès aux soins</em> ainsi que la surcharge des services d’urgences.
+                </p>
+                <p>L'équipe du projet est composé de :</p>
+                <ul>
+                    <li>Dieu-Donné FIANKO</li>
+                    <li>Sayeh FATEN </li>
+                    <li>Zoughbi MERIEM</li>
+                </ul>
+                <p>
+                Ce projet représente une expérience académique enrichissante, reposant sur l’<strong>entraide, la rigueur scientifique et la complémentarité des profils</strong>, et illustre notre capacité à mener un projet structuré à impact sociétal.
+                </p>
+
+                <p style="margin-top: 30px;">
+                <strong>Compétences mobilisées :</strong><br>
+                <ul>
+                    <li>Traitement des données avec <em>R</em></li>
+                    <li>Conception web en <em>HTML, CSS, JavaScript</em> en front-end & <em>PHP, SQL</em> en back-end</li>
+                    <li>Modélisation UML avec <em>UMLet</em></li>
+                    <li>Structuration des données</li>
+                    <li>Visualisation interactive</li>
+                </ul>
+                </p>
+
+                <div class="icones-technos">
+                <img src="images/r.png" alt="R" title="R">
+                <img src="images/html.png" alt="HTML" title="HTML">
+                <img src="images/css.png" alt="CSS" title="CSS">
+                <img src="images/php.png" alt="PHP" title="PHP">
+                <img src="images/java-script.png" alt="JavaScript" title="JavaScript">
+                <img src="images/sql.png" alt="SQL" title="SQL – Bases de données">
+                <img src="images/uml.gif" alt="UMLet" title="UMLet - UML diagrams">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="data">
+        <div class="data-contenu">
+            <h2>Données & Méthodes</h2>
+
+            <p>
+            Ce projet repose sur l’analyse de plusieurs sources de données publiques et ouvertes, permettant une exploration fine des indicateurs de l’accès aux soins et de surcharge des services d’urgences.
+            </p>
+
+            <p>
+            Les données mobilisées incluent notamment :
+            </p>
+            <ul>
+                <li>Les données d'<strong>accessibilité potentielle localisée (APL)</strong>  accessible sur <a href="//data.drees.solidarites-sante.gouv.fr/explore/dataset/530_l-accessibilite-potentielle-localisee-apl/information/">data-apl</a></li>
+                <li>Les données d'<strong>accessibilité potentielle localisée (APL) aux structures médico-sociales destinées aux personnes âgées</strong> accessible sur <a href="https://data.drees.solidarites-sante.gouv.fr/explore/dataset/accessibilite-potentielle-localisee-apl-aux-structures-medico-sociales-destinees/information/">data-apl-personne-agée</a></li>
+                <li>Les données de l’<strong>enquête urgences 2023</strong> accessible sur <a href="https://data.drees.solidarites-sante.gouv.fr/explore/dataset/507_l-enquete-nationale-sur-les-structures-des-urgences-hospitalieres/information/">data-enquete-urgence-2023</a></li>
+                <li>Les données d'<strong>estimation de la population au 1ᵉʳ janvier 2025</strong> accessiblesur <a href="https://www.insee.fr/fr/statistiques/8331297">data-population-estimative-2025-INSEE</a></li>
+            </ul>
+            <p>Un désert médical est définit ici comme était une APL générale inférieure 2,5 consulatation par habitant et par an.</p>
+            <p>L’indicateur d’accessibilité potentielle localisée (APL) a été développé pour mesurer l’adéquation spatiale entre 
+                l’offre et la demande de soins de premier recours à un échelon géographique fin. C'est un indicateur local, 
+                disponible au niveau de chaque commune, qui tient compte de l’offre et de la demande issues des communes environnantes. 
+                Calculé à l’échelle communale, l’APL met en évidence des disparités d’offre de soins qu’un indicateur usuel de densité, 
+                calculé sur des mailles beaucoup plus larges aurait tendance à masquer. Il tient également compte du niveau d’activité des 
+                professionnels en exercice ainsi que de la structure par âge de la population de chaque commune qui influence les besoins de soins.
+            </p>
+            <p>La surcharge des urgences hospitalière est décrite arbitrairement comme étant un ration de passages/médecin supérieur à 24 sur 24 heures. (données enquete urgence 2023)</p>
+            <p>
+            Les traitements réalisés comprennent :
+            </p>
+            <ul>
+                <li>l'aggrégation des données par région</li>
+                <li>le calcul de nouvelles variables (désert médical & surcharge des urgences) à partie des variables initiales</li>
+                <li>la structuration des données pour l’interopérabilité</li>
+                <li>l'exploitation de la base de données pour extraire les données et créer des figures de manière interactive</li>
+            </ul>
+
+            <p>
+            Les différentes étapes ont été documentées afin d’assurer la transparence de la démarche méthodologique, dans une logique de <strong>reproductibilité scientifique</strong> et de <strong>valorisation open data</strong>.
+            </p>
+        </div>
+        </section>
+        
+        <section id="dashboard">
+            <div class="dashboard-contenu">
+                <h2>Tableau de bord interactif</h2>
+                <p>
+                Explorez les principales visualisations du projet : carte géographique, diagrammes et tableaux vous permettent de mieux comprendre les dynamiques territoriales en matière d’accès aux soins et de surcharge des urgences hospitalières.
+                </p>
+            </div>
+
+            <div id="dashboard-figure">
+                <figure>
+                    <a href="visualisation/dashboard.php">
+                        <img src="images/synthes.png" alt="synthes">
+                    </a>
+                    <figcaption>Synthèses par région</figcaption>
+                </figure>
+                <figure>
+                    <a href="http://localhost:5173/statistiques">
+                        <img src="images/bar.jpg" alt="histogramme">
+                    </a>
+                    <figcaption>Diagramme (Densité professionnel de santé)</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="http://localhost:5173/map">
+                        <img src="images/carte.jpg" alt="carte">
+                    </a>
+                    <figcaption>Carte (APL selon département)</figcaption>
+                </figure>
+
+                <figure class="dashboard-icon">
+                    <a href="http://localhost:5173/apl">
+                        <img src="images/tableau.png" alt="Tableau de données">
+                    </a>
+                    <figcaption>Tableau (APL selon département)</figcaption>
+                </figure>
+                <figure>
+                    <a href="http://localhost:5173/carte">
+                        <img src="images/post-it.png" alt="post-it">
+                    </a>
+                    <figcaption>Post-it (Ratio Passages/Médecin)</figcaption>
+                </figure>
+                <figure>
+                    <a href="http://localhost:5173/zones-risque">
+                        <img src="images/post-it.png" alt="post-it">
+                    </a>
+                    <figcaption>Post-it (zone à risque)</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-contenu">
+                <h2>Contact</h2>
+                <p>
+                Pour toute question relative au projet, vous pouvez nous écrire en cliquant sur :
+                </p>
+                <p>
+                <a href="mailto:kokoudieu-donne.fianko@edu.univ-paris13.fr" class="contact-mail">Dieu-Donné FIANKO</a><br>
+                <a href="mailto:meriem.zoughbi@edu.univ-paris13.fr" class="contact-mail">Faten SAYEH</a><br>
+                <a href="mailto:meriem.zoughbi@edu.sorbonne-paris-nord.fr" class="contact-mail">Meriem ZOUGHBI</a><br>
+                <a href="mailto:melanie.courtine@sorbonne-paris-nord.fr" class="contact-mail">Mélanie COURTINE</a><br>
+                </p>
+                <p>
+                Département Santé Publique<br>
+                UFR SMBH – Université Sorbonne Paris Nord<br>
+                74 Rue Marcel Cachin, 93017 Bobigny Cedex
+                </p>
+            </div>
+        </section>
+
+        <footer id="pied-de-page">
+            <div class="footer-logos">
+                <img src="images/uspn.png" alt="Logo Université Sorbonne Paris Nord">
+                <img src="images/smhb.png" alt="Logo UFR Santé Médecine Biologie Humaine">
+            </div>
+            <p>
+                Projet tutoré – Master 1 Santé Publique, parcours Informatique Biomédicale<br>
+                Université Sorbonne Paris Nord – UFR SMBH | Année académique 2024–2025
+            </p>
+            <p class="footer-credits">©<span id="annee-courante"></span> – Tous droits réservés</p>
+        </footer>
+        <script src="scripts/script_index.js"></script>
+    </body>
+</html>
+

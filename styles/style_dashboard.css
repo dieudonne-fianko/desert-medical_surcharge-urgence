@@ -1,0 +1,238 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo-zone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 24px;
+}
+
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 24px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header nav a {
+  text-decoration: none;
+  color: #00416A;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 15px;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 100%;
+  max-width: 100%;
+  background: #f1f1f1;
+  padding: 1em;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.toolbar .input {
+  flex: 1 1 150px;
+  min-width: 120px;
+}
+
+.checkbox-wrapper {
+  flex: 1 1 auto;
+}
+
+.toolbar-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.toolbar-buttons .btn {
+  flex: 0 0 auto;
+}
+
+.btn {
+  padding: 0.5em;
+  background: #003049;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.charts {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .charts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.chart-card {
+  background: white;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.chart-card canvas {
+  height: 100% !important;
+  min-height: 600px;
+}
+
+.grid-13 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  padding: 1em;
+}
+
+.grid-13 div {
+  border: 1px solid #999;
+  border-radius: 4px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 0.3em;
+}
+
+.legend {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.legend div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.color-box {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #333;
+}
+
+/* 🧾 Footer */
+#pied-de-page {
+  background-color: #fff;
+  color: #f0f0f0;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 4px solid #0077B6;
+  margin-top: 60px;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-logos img {
+  height: 60px;
+  max-width: 160px;
+  filter: brightness(1.2) drop-shadow(0 0 3px rgba(255,255,255,0.2));
+}
+
+.footer-credits,
+footer p {
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #163b6a;
+  margin: 0;
+}
+
+/* Réduction des paddings et tailles sur petits écrans */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .toolbar .input,
+  .toolbar-buttons .btn,
+  .checkbox-wrapper {
+    width: 100%;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-card canvas {
+    min-height: 300px;
+  }
+
+  .grid-13 {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+}
+
+/* Ajustements supplémentaires pour très petits écrans */
+@media (max-width: 480px) {
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-logos img {
+    height: 40px;
+    max-width: 120px;
+  }
+}
