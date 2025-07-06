@@ -50,7 +50,7 @@ Clique sur Start pour MySQL → il devrait maintenant démarrer correctement
 ├── visualisation/  
 │   └── dashboard.php  
 ├── base/  
-│   ├── base.sql  
+│   ├── structure.sql  
 │   └── donnees.sql  
 └── README.md  
 
