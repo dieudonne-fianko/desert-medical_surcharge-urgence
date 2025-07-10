@@ -3,7 +3,7 @@
 
 **Université Sorbonne Paris Nord – UFR SMBH**
 
-*Sujet : Impact des déserts médicaux sur la surcharge des urgences hospitalières en Frnace*
+*Sujet : Impact des déserts médicaux sur la surcharge des urgences hospitalières en France*
 
 ---
 
