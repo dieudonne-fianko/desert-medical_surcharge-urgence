@@ -152,7 +152,7 @@ header nav a {
   margin-bottom: 6px;
 }
 
-/* 🧠 Icônes compétences */
+/* Icônes compétences */
 .icones-technos {
   display: flex;
   flex-wrap: wrap;
@@ -172,7 +172,7 @@ header nav a {
   filter: brightness(1.15);
 }
 
-/* 📊 Données & Méthodes */
+/* Données & Méthodes */
 #data {
   background-color: #ffffff;
   border-top: 4px solid #0077B6;
@@ -239,7 +239,7 @@ header nav a {
   margin-bottom: 10px;
 }
 
-/* 🎛️ Section principale du tableau de bord */
+/* Section principale du tableau de bord */
 #dashboard {
   background-color: #fefefe;
   padding: 60px 20px;
@@ -279,7 +279,7 @@ header nav a {
   margin-bottom: 20px;
 }
 
-/* 📊 Grille des visualisations */
+/* Grille des visualisations */
 #dashboard-figure {
   display: flex;
   flex-wrap: wrap;
@@ -410,7 +410,7 @@ footer p {
   margin: 0;
 }
 
-/* 📱 Responsive */
+/* Responsivité */
 @media (max-width: 600px) {
   .apropos-contenu h2,
   .data-contenu h2 {
