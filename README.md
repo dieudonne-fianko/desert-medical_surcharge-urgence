@@ -1,18 +1,24 @@
-## Impact des déserts médicaux sur la surcharge des services des urgences
+# Projet Tutoré
+## Master 1 Santé Publique – Informatique Biomédicale
+
+**Université Sorbonne Paris Nord – UFR SMBH**
+
+*Sujet : Impact des déserts médicaux sur la surcharge des urgences hospitalières en Frnace*
 
 ---
 
 ## Prérequis
 
 - Serveur local PHP/MySQL : XAMPP, WAMP ou MAMP (de préférence XAMPP)
+- Installation de la seconde application web (partie_2) :nécessaires pour exploiter toutes les fonctionnalités; c'est une application indépendante dont le guide d'installation se trouve dans son propre README
 - Navigateur web moderne
 - Navigateur compatible JavaScript
 - Navigateur conseillé : Chrome, Firefox ou Edge
 
-### ⚠️ Problème fréquent avec le lancement de MySQL (XAMPP)
+### Problème fréquent avec le lancement de MySQL (XAMPP)
 Il arrive que MySQL ne parvienne pas à démarrer correctement via le panneau de contrôle de XAMPP, généralement en raison d’un port déjà occupé (3306 ou 80) par un autre processus.
 
-✅ Solution proposée
+### Solution proposée
 **Ouvrir l’invite de commande en tant qu’administrateur :**
 Clic droit sur “Invite de commande” → Exécuter en tant qu’administrateur
 
@@ -28,7 +34,7 @@ Vous verrez une ligne avec le mot LISTENING. Notez le numéro indiqué en fin de
 ```bash
     taskkill /PID 6040 /F
 ```
-🔁 Remplacez 6040 par le PID récupéré à l’étape précédente (netstat -ano | findstr :3306).
+Remplacez 6040 par le PID récupéré à l’étape précédente (netstat -ano | findstr :3306).
 
 **Relancer MySQL dans XAMPP :**
 Retourne sur le panneau de contrôle XAMPP
