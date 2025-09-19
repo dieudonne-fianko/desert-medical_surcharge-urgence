@@ -103,7 +103,7 @@ Clique sur Start pour MySQL → il devrait maintenant démarrer correctement
 
 ## Auteurs
 
-- Dieu-Donné Fianko,Sayeh FATEN,Zoughbi MERIEM" 
+- Dieu-Donné Fianko
 - Formation : Master 1 Santé Publique – Parcours Informatique Biomédicale  
 - Année académique 2024–2025
 
